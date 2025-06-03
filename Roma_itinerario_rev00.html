@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_71621add249d46a9646e36bdd89a886f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_71621add249d46a9646e36bdd89a886f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_71621add249d46a9646e36bdd89a886f = L.map(
+                "map_71621add249d46a9646e36bdd89a886f",
+                {
+                    center: [41.8931, 12.4828],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bf22441a432a9a5543f4162ad96c2f84 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var marker_7fb08690767fd101d1d4c292b6a1ec77 = L.marker(
+                [41.9063, 12.4613],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_9fd93614477e7371f001e2bad817d8b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_7fb08690767fd101d1d4c292b6a1ec77.setIcon(icon_9fd93614477e7371f001e2bad817d8b7);
+        
+    
+        var popup_8a63901a1feab15e6a0e535cd5348abd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_492038aff26d4295dd15fd0af18b9c97 = $(`<div id="html_492038aff26d4295dd15fd0af18b9c97" style="width: 100.0%; height: 100.0%;">Base: NH Collection Roma Giustiniano</div>`)[0];
+            popup_8a63901a1feab15e6a0e535cd5348abd.setContent(html_492038aff26d4295dd15fd0af18b9c97);
+        
+
+        marker_7fb08690767fd101d1d4c292b6a1ec77.bindPopup(popup_8a63901a1feab15e6a0e535cd5348abd)
+        ;
+
+        
+    
+    
+            marker_7fb08690767fd101d1d4c292b6a1ec77.bindTooltip(
+                `<div>
+                     Hotel Base
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30c38e4086d568a230f782d19b7b3883 = L.marker(
+                [41.9107, 12.4663],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_666b28df8c022249a28f52978e11ef06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_30c38e4086d568a230f782d19b7b3883.setIcon(icon_666b28df8c022249a28f52978e11ef06);
+        
+    
+        var popup_67d25fcdd132e2b820775939f7af08d0 = L.popup({"maxWidth": 350});
+
+        
+            var html_c42287af4d09382e26ddb7b5085c8730 = $(`<div id="html_c42287af4d09382e26ddb7b5085c8730" style="width: 100.0%; height: 100.0%;"><b>Tour en Prati</b><br><br>Barrio elegante y moderno del siglo XX.<br>Conocido por sus boutiques y calles geométricas.<br>Via Cola di Rienzo es su eje comercial.<br>No hay ruinas antiguas, pero mucha vida local.<br>Ideal para sentir el día a día romano.</div>`)[0];
+            popup_67d25fcdd132e2b820775939f7af08d0.setContent(html_c42287af4d09382e26ddb7b5085c8730);
+        
+
+        marker_30c38e4086d568a230f782d19b7b3883.bindPopup(popup_67d25fcdd132e2b820775939f7af08d0)
+        ;
+
+        
+    
+    
+            marker_30c38e4086d568a230f782d19b7b3883.bindTooltip(
+                `<div>
+                     Tour en Prati (Día 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47a7a4b2b84a5c0462358b829f411f47 = L.marker(
+                [41.9031, 12.4663],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_4300324f64c3b7c2bf3219da1b61acb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_47a7a4b2b84a5c0462358b829f411f47.setIcon(icon_4300324f64c3b7c2bf3219da1b61acb0);
+        
+    
+        var popup_f48611437b8f7f0891792a5c57f68da5 = L.popup({"maxWidth": 350});
+
+        
+            var html_392fac94e6d505eeffe2bda888c3314a = $(`<div id="html_392fac94e6d505eeffe2bda888c3314a" style="width: 100.0%; height: 100.0%;"><b>Castel Sant'Angelo</b><br><br>Mausoleo del emperador Adriano.<br>Conectado al Vaticano por el Passetto.<br>Fue castillo, prisión y fortaleza papal.<br>Ofrece una de las mejores vistas del Tíber.<br>Tiene túneles secretos entre muros gruesos.</div>`)[0];
+            popup_f48611437b8f7f0891792a5c57f68da5.setContent(html_392fac94e6d505eeffe2bda888c3314a);
+        
+
+        marker_47a7a4b2b84a5c0462358b829f411f47.bindPopup(popup_f48611437b8f7f0891792a5c57f68da5)
+        ;
+
+        
+    
+    
+            marker_47a7a4b2b84a5c0462358b829f411f47.bindTooltip(
+                `<div>
+                     Castel Sant'Angelo (Día 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49c33e75bfdb99e140a08a3b70de26cf = L.marker(
+                [41.8896, 12.4613],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_f3c6075687f63df76782cbee95886fbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_49c33e75bfdb99e140a08a3b70de26cf.setIcon(icon_f3c6075687f63df76782cbee95886fbf);
+        
+    
+        var popup_ef38d0f373d2041d82e2c949359148c1 = L.popup({"maxWidth": 350});
+
+        
+            var html_e3df2ffa20515c4668807d3d48bd106e = $(`<div id="html_e3df2ffa20515c4668807d3d48bd106e" style="width: 100.0%; height: 100.0%;"><b>Jardín Botánico / San Pedro / Gianicolo</b><br><br>Jardín Botánico contiene 7,000 especies.<br>Desde el Gianicolo se ve toda Roma.<br>Disparo de cañón diario a mediodía en Gianicolo.<br>San Pedro es el corazón espiritual de Roma.<br>El obelisco del Vaticano es egipcio, no romano.</div>`)[0];
+            popup_ef38d0f373d2041d82e2c949359148c1.setContent(html_e3df2ffa20515c4668807d3d48bd106e);
+        
+
+        marker_49c33e75bfdb99e140a08a3b70de26cf.bindPopup(popup_ef38d0f373d2041d82e2c949359148c1)
+        ;
+
+        
+    
+    
+            marker_49c33e75bfdb99e140a08a3b70de26cf.bindTooltip(
+                `<div>
+                     Jardín Botánico / San Pedro / Gianicolo (Día 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e3d2bab34786b13c7d8632f0ffe5307 = L.marker(
+                [41.8893, 12.4692],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_6ecaf5489b66ae410cbe98329b4bb95f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5e3d2bab34786b13c7d8632f0ffe5307.setIcon(icon_6ecaf5489b66ae410cbe98329b4bb95f);
+        
+    
+        var popup_5e5f795f389dc00f6290c3798f5213b7 = L.popup({"maxWidth": 350});
+
+        
+            var html_d9cfb38a47815f5654ad00eb62adb572 = $(`<div id="html_d9cfb38a47815f5654ad00eb62adb572" style="width: 100.0%; height: 100.0%;"><b>Ma Che Siete Venuti A Fà</b><br><br>Bar icónico de cerveza artesanal en Trastevere.<br>Reconocido por su selección internacional.<br>Ambiente informal, siempre lleno.<br>Frecuentado por locales y beer lovers.<br>Ideal para cerrar un día auténtico en Roma.</div>`)[0];
+            popup_5e5f795f389dc00f6290c3798f5213b7.setContent(html_d9cfb38a47815f5654ad00eb62adb572);
+        
+
+        marker_5e3d2bab34786b13c7d8632f0ffe5307.bindPopup(popup_5e5f795f389dc00f6290c3798f5213b7)
+        ;
+
+        
+    
+    
+            marker_5e3d2bab34786b13c7d8632f0ffe5307.bindTooltip(
+                `<div>
+                     Ma Che Siete Venuti A Fà (Día 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61e84d6137aad896cbd408f65568cf69 = L.marker(
+                [41.8902, 12.4922],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_a4747fe008d7f09f62b705cdd29955d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_61e84d6137aad896cbd408f65568cf69.setIcon(icon_a4747fe008d7f09f62b705cdd29955d6);
+        
+    
+        var popup_e9b32a06c7696ae373e5461a3be629b4 = L.popup({"maxWidth": 350});
+
+        
+            var html_9a66922007cd2311d928d335326100d4 = $(`<div id="html_9a66922007cd2311d928d335326100d4" style="width: 100.0%; height: 100.0%;"><b>Coliseo</b><br><br>Capacidad para 50,000–80,000 espectadores.<br>Inaugurado en el año 80 d.C. con 100 días de juegos.<br>Nombre original: Anfiteatro Flavio.<br>Tenía toldos móviles llamados velarium.<br>Sufrió daños por terremotos y saqueos.</div>`)[0];
+            popup_e9b32a06c7696ae373e5461a3be629b4.setContent(html_9a66922007cd2311d928d335326100d4);
+        
+
+        marker_61e84d6137aad896cbd408f65568cf69.bindPopup(popup_e9b32a06c7696ae373e5461a3be629b4)
+        ;
+
+        
+    
+    
+            marker_61e84d6137aad896cbd408f65568cf69.bindTooltip(
+                `<div>
+                     Coliseo (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00ac0b7fd765bf6c1737755f9f375f57 = L.marker(
+                [41.8925, 12.4853],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_c4c07586bd1c73d0e1b256f38e1b12a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_00ac0b7fd765bf6c1737755f9f375f57.setIcon(icon_c4c07586bd1c73d0e1b256f38e1b12a7);
+        
+    
+        var popup_581f69809e559bd8d44c4fcc5f141dd6 = L.popup({"maxWidth": 350});
+
+        
+            var html_a47dada225a0550370b7687f33dfac1b = $(`<div id="html_a47dada225a0550370b7687f33dfac1b" style="width: 100.0%; height: 100.0%;"><b>Foro Romano</b><br><br>Centro político y comercial de la antigua Roma.<br>Albergaba templos, basílicas y tribunales.<br>Fue abandonado en la Edad Media.<br>Lugar del discurso de Marco Antonio tras la muerte de César.<br>La Vía Sacra lo cruza de este a oeste.</div>`)[0];
+            popup_581f69809e559bd8d44c4fcc5f141dd6.setContent(html_a47dada225a0550370b7687f33dfac1b);
+        
+
+        marker_00ac0b7fd765bf6c1737755f9f375f57.bindPopup(popup_581f69809e559bd8d44c4fcc5f141dd6)
+        ;
+
+        
+    
+    
+            marker_00ac0b7fd765bf6c1737755f9f375f57.bindTooltip(
+                `<div>
+                     Foro Romano (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_144bfb6e017fd03026061112c5a122a6 = L.marker(
+                [41.8894, 12.4889],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_234357b6bbffa0037b046c7e3f4d5d73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_144bfb6e017fd03026061112c5a122a6.setIcon(icon_234357b6bbffa0037b046c7e3f4d5d73);
+        
+    
+        var popup_77d7d6914645ef3908a2d5e1ea371e54 = L.popup({"maxWidth": 350});
+
+        
+            var html_702c0d87f6a929b29728b175da7edf7c = $(`<div id="html_702c0d87f6a929b29728b175da7edf7c" style="width: 100.0%; height: 100.0%;"><b>Palatino</b><br><br>Según la leyenda, hogar de Rómulo y Remo.<br>Zona residencial de emperadores romanos.<br>Contiene ruinas del palacio de Domiciano.<br>El término 'palacio' viene de 'Palatino'.<br>Vista panorámica sobre el Foro y el Circo Máximo.</div>`)[0];
+            popup_77d7d6914645ef3908a2d5e1ea371e54.setContent(html_702c0d87f6a929b29728b175da7edf7c);
+        
+
+        marker_144bfb6e017fd03026061112c5a122a6.bindPopup(popup_77d7d6914645ef3908a2d5e1ea371e54)
+        ;
+
+        
+    
+    
+            marker_144bfb6e017fd03026061112c5a122a6.bindTooltip(
+                `<div>
+                     Palatino (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23685412bbebe4e1b5b34ec62bc1cd19 = L.marker(
+                [41.8931, 12.4882],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_43ff8701b2a1c0748fbf44be01203bc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_23685412bbebe4e1b5b34ec62bc1cd19.setIcon(icon_43ff8701b2a1c0748fbf44be01203bc8);
+        
+    
+        var popup_5a92d329e147b8fc5bd7c16be862af32 = L.popup({"maxWidth": 350});
+
+        
+            var html_826d7d17fd464a7494405ffe6ce9af5a = $(`<div id="html_826d7d17fd464a7494405ffe6ce9af5a" style="width: 100.0%; height: 100.0%;"><b>Via dei Fori Imperiali</b><br><br>Construida por Mussolini en 1932.<br>Corta a través de foros imperiales antiguos.<br>Antes se llamaba Via dell'Impero.<br>Escenario frecuente de desfiles militares.<br>Contiene réplicas de monumentos antiguos.</div>`)[0];
+            popup_5a92d329e147b8fc5bd7c16be862af32.setContent(html_826d7d17fd464a7494405ffe6ce9af5a);
+        
+
+        marker_23685412bbebe4e1b5b34ec62bc1cd19.bindPopup(popup_5a92d329e147b8fc5bd7c16be862af32)
+        ;
+
+        
+    
+    
+            marker_23685412bbebe4e1b5b34ec62bc1cd19.bindTooltip(
+                `<div>
+                     Via dei Fori Imperiali (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8628bee2cdf5023f03c8030458bcafa0 = L.marker(
+                [41.8956, 12.4823],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_f0782f254f2d6a864818df3390b74829 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8628bee2cdf5023f03c8030458bcafa0.setIcon(icon_f0782f254f2d6a864818df3390b74829);
+        
+    
+        var popup_d82599d3f08ee30b97f19da5911ff647 = L.popup({"maxWidth": 350});
+
+        
+            var html_19e97be17f2fba03855fc3b4540ff6fb = $(`<div id="html_19e97be17f2fba03855fc3b4540ff6fb" style="width: 100.0%; height: 100.0%;"><b>Vittoriano / Altare della Patria</b><br><br>Construido en honor a Víctor Manuel II.<br>Contiene la tumba del soldado desconocido.<br>Diseñado en mármol blanco de Botticino.<br>Apodado 'máquina de escribir' por los romanos.<br>Tiene ascensor panorámico a la terraza.</div>`)[0];
+            popup_d82599d3f08ee30b97f19da5911ff647.setContent(html_19e97be17f2fba03855fc3b4540ff6fb);
+        
+
+        marker_8628bee2cdf5023f03c8030458bcafa0.bindPopup(popup_d82599d3f08ee30b97f19da5911ff647)
+        ;
+
+        
+    
+    
+            marker_8628bee2cdf5023f03c8030458bcafa0.bindTooltip(
+                `<div>
+                     Vittoriano / Altare della Patria (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbddf3cb9c48a4f31be364ccb37701ef = L.marker(
+                [41.893, 12.4828],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_7d92c8d78b304de07ce5867a9e7e73d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fbddf3cb9c48a4f31be364ccb37701ef.setIcon(icon_7d92c8d78b304de07ce5867a9e7e73d0);
+        
+    
+        var popup_14539d40f1d7b79f8f4814f92deff607 = L.popup({"maxWidth": 350});
+
+        
+            var html_c31dbf14e271e3cfcf0e5de7a1a72e16 = $(`<div id="html_c31dbf14e271e3cfcf0e5de7a1a72e16" style="width: 100.0%; height: 100.0%;"><b>Monte Capitolino / Piazza del Campidoglio</b><br><br>Una de las 7 colinas de Roma.<br>Rediseñada por Miguel Ángel en el Renacimiento.<br>Contiene los Museos Capitolinos.<br>Lugar del antiguo templo de Júpiter Óptimo Máximo.<br>Centro simbólico del poder romano antiguo.</div>`)[0];
+            popup_14539d40f1d7b79f8f4814f92deff607.setContent(html_c31dbf14e271e3cfcf0e5de7a1a72e16);
+        
+
+        marker_fbddf3cb9c48a4f31be364ccb37701ef.bindPopup(popup_14539d40f1d7b79f8f4814f92deff607)
+        ;
+
+        
+    
+    
+            marker_fbddf3cb9c48a4f31be364ccb37701ef.bindTooltip(
+                `<div>
+                     Monte Capitolino / Piazza del Campidoglio (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9019be96e18316c15fe5a25b53d32601 = L.marker(
+                [41.8951, 12.4769],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_9222c1bd50617d6b660584675110e644 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9019be96e18316c15fe5a25b53d32601.setIcon(icon_9222c1bd50617d6b660584675110e644);
+        
+    
+        var popup_44bd9a7c021ba18d2a1a4aa73f88a971 = L.popup({"maxWidth": 350});
+
+        
+            var html_990c74a93133dcfc89221c279b2fa49e = $(`<div id="html_990c74a93133dcfc89221c279b2fa49e" style="width: 100.0%; height: 100.0%;"><b>Largo di Torre Argentina / Chiesa de Sant'Ignazio</b><br><br>Largo: sitio del asesinato de Julio César.<br>Excavaciones revelaron 4 templos republicanos.<br>Ahora es santuario de gatos callejeros.<br>Chiesa Sant'Ignazio tiene una falsa cúpula pintada.<br>Ejemplo del ilusionismo barroco romano.</div>`)[0];
+            popup_44bd9a7c021ba18d2a1a4aa73f88a971.setContent(html_990c74a93133dcfc89221c279b2fa49e);
+        
+
+        marker_9019be96e18316c15fe5a25b53d32601.bindPopup(popup_44bd9a7c021ba18d2a1a4aa73f88a971)
+        ;
+
+        
+    
+    
+            marker_9019be96e18316c15fe5a25b53d32601.bindTooltip(
+                `<div>
+                     Largo di Torre Argentina / Chiesa de Sant'Ignazio (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19167482720a6051ce5b4540ca5315c0 = L.marker(
+                [41.8986, 12.4768],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_99658f09cd7350cf134743d2dcc6cedc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_19167482720a6051ce5b4540ca5315c0.setIcon(icon_99658f09cd7350cf134743d2dcc6cedc);
+        
+    
+        var popup_bf133e273fa3024aa86cb78d52b712f3 = L.popup({"maxWidth": 350});
+
+        
+            var html_1015e6843e8d8ef08c8f33b6b375f156 = $(`<div id="html_1015e6843e8d8ef08c8f33b6b375f156" style="width: 100.0%; height: 100.0%;"><b>Elefantino / Pantheon</b><br><br>Obelisco egipcio montado sobre elefante de Bernini.<br>Pantheon es el edificio romano mejor conservado.<br>Cúpula del Panteón sigue siendo la más grande de hormigón sin refuerzo.<br>Panteón fue iglesia desde el año 609 d.C.<br>Sepulcro de Rafael y reyes italianos.</div>`)[0];
+            popup_bf133e273fa3024aa86cb78d52b712f3.setContent(html_1015e6843e8d8ef08c8f33b6b375f156);
+        
+
+        marker_19167482720a6051ce5b4540ca5315c0.bindPopup(popup_bf133e273fa3024aa86cb78d52b712f3)
+        ;
+
+        
+    
+    
+            marker_19167482720a6051ce5b4540ca5315c0.bindTooltip(
+                `<div>
+                     Elefantino / Pantheon (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9118aabc2bfda76aaab4a2333509b340 = L.marker(
+                [41.9002, 12.4796],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_a09fe98c63d519788f0cdf1f4901c545 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9118aabc2bfda76aaab4a2333509b340.setIcon(icon_a09fe98c63d519788f0cdf1f4901c545);
+        
+    
+        var popup_8e46f4d90bf6bd8d001a4e23043ef3fa = L.popup({"maxWidth": 350});
+
+        
+            var html_cb7bf169eb1fe17036078284d208119d = $(`<div id="html_cb7bf169eb1fe17036078284d208119d" style="width: 100.0%; height: 100.0%;"><b>Tempio di Adriano</b><br><br>Dedicado al emperador Adriano por su sucesor Antonino Pío.<br>Solo queda una hilera de columnas corintias.<br>Integrado en un edificio moderno de bolsa.<br>Originalmente parte de un templo majestuoso.<br>Hoy alberga exposiciones temporales.</div>`)[0];
+            popup_8e46f4d90bf6bd8d001a4e23043ef3fa.setContent(html_cb7bf169eb1fe17036078284d208119d);
+        
+
+        marker_9118aabc2bfda76aaab4a2333509b340.bindPopup(popup_8e46f4d90bf6bd8d001a4e23043ef3fa)
+        ;
+
+        
+    
+    
+            marker_9118aabc2bfda76aaab4a2333509b340.bindTooltip(
+                `<div>
+                     Tempio di Adriano (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c2a64e873bf9dd2cd65816a34306abe = L.marker(
+                [41.8992, 12.4731],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_361eefe01f9ae19a732e36143ad4e398 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2c2a64e873bf9dd2cd65816a34306abe.setIcon(icon_361eefe01f9ae19a732e36143ad4e398);
+        
+    
+        var popup_45629ea9944370f55111077993ddf3ff = L.popup({"maxWidth": 350});
+
+        
+            var html_06d3bfb5105e404426428beade72d7c7 = $(`<div id="html_06d3bfb5105e404426428beade72d7c7" style="width: 100.0%; height: 100.0%;"><b>Piazza Navona</b><br><br>Construida sobre el Estadio de Domiciano.<br>Forma oval es la de la pista atlética antigua.<br>Fuente de los Cuatro Ríos fue obra de Bernini.<br>Competencia artística con Borromini en la iglesia vecina.<br>Centro de vida barroca y espectáculos callejeros.</div>`)[0];
+            popup_45629ea9944370f55111077993ddf3ff.setContent(html_06d3bfb5105e404426428beade72d7c7);
+        
+
+        marker_2c2a64e873bf9dd2cd65816a34306abe.bindPopup(popup_45629ea9944370f55111077993ddf3ff)
+        ;
+
+        
+    
+    
+            marker_2c2a64e873bf9dd2cd65816a34306abe.bindTooltip(
+                `<div>
+                     Piazza Navona (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91bf3c852a2eb33880cc785cd4505b1b = L.marker(
+                [41.9009, 12.4833],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_f4d0a17c196371978f13025d473e3301 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_91bf3c852a2eb33880cc785cd4505b1b.setIcon(icon_f4d0a17c196371978f13025d473e3301);
+        
+    
+        var popup_d53ab6cbacf209e1963fc83fbae73ed4 = L.popup({"maxWidth": 350});
+
+        
+            var html_6b710597fee24ddecb7df3d41773c9ba = $(`<div id="html_6b710597fee24ddecb7df3d41773c9ba" style="width: 100.0%; height: 100.0%;"><b>Fontana di Trevi</b><br><br>Diseñada por Nicola Salvi en el siglo XVIII.<br>Tradición: lanzar una moneda para volver a Roma.<br>Se recogen unos 3,000€ diarios en la fuente.<br>Inspirada en el arte de la Roma clásica.<br>Escenario icónico de 'La Dolce Vita'.</div>`)[0];
+            popup_d53ab6cbacf209e1963fc83fbae73ed4.setContent(html_6b710597fee24ddecb7df3d41773c9ba);
+        
+
+        marker_91bf3c852a2eb33880cc785cd4505b1b.bindPopup(popup_d53ab6cbacf209e1963fc83fbae73ed4)
+        ;
+
+        
+    
+    
+            marker_91bf3c852a2eb33880cc785cd4505b1b.bindTooltip(
+                `<div>
+                     Fontana di Trevi (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5af0c675a8d200cb6ae6c79e564a6732 = L.marker(
+                [41.8997, 12.4783],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_82536800ef8e912dd5fe40a836b12e6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5af0c675a8d200cb6ae6c79e564a6732.setIcon(icon_82536800ef8e912dd5fe40a836b12e6c);
+        
+    
+        var popup_c7d41ec4b47f56d6736d6d0bf0d71431 = L.popup({"maxWidth": 350});
+
+        
+            var html_c05582c0bc9651e3fb6ff5e274d9b164 = $(`<div id="html_c05582c0bc9651e3fb6ff5e274d9b164" style="width: 100.0%; height: 100.0%;"><b>Palazzo Montecitorio</b><br><br>Sede de la Cámara de Diputados italiana.<br>Diseñado originalmente por Bernini.<br>Fachada barroca con reloj central.<br>Tiene un obelisco egipcio en la plaza.<br>Símbolo del poder parlamentario moderno.</div>`)[0];
+            popup_c7d41ec4b47f56d6736d6d0bf0d71431.setContent(html_c05582c0bc9651e3fb6ff5e274d9b164);
+        
+
+        marker_5af0c675a8d200cb6ae6c79e564a6732.bindPopup(popup_c7d41ec4b47f56d6736d6d0bf0d71431)
+        ;
+
+        
+    
+    
+            marker_5af0c675a8d200cb6ae6c79e564a6732.bindTooltip(
+                `<div>
+                     Palazzo Montecitorio (Día 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c965a2b02fff8270e3f55a4c42c19bb6 = L.marker(
+                [41.9065, 12.4537],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_b9ec0403d4272e68af3cd32872c5be15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c965a2b02fff8270e3f55a4c42c19bb6.setIcon(icon_b9ec0403d4272e68af3cd32872c5be15);
+        
+    
+        var popup_56630b47540713091e2876fed87ce3b2 = L.popup({"maxWidth": 350});
+
+        
+            var html_6037c255899e80bb22e238172878e08f = $(`<div id="html_6037c255899e80bb22e238172878e08f" style="width: 100.0%; height: 100.0%;"><b>Musei Vaticani e Cappella Sistina</b><br><br>Más de 7 km de galerías y pasillos.<br>La Capilla Sixtina fue pintada por Miguel Ángel.<br>Contiene obras de Rafael, Da Vinci y más.<br>Se fundó en 1506 por el Papa Julio II.<br>Recibe más de 6 millones de visitantes al año.</div>`)[0];
+            popup_56630b47540713091e2876fed87ce3b2.setContent(html_6037c255899e80bb22e238172878e08f);
+        
+
+        marker_c965a2b02fff8270e3f55a4c42c19bb6.bindPopup(popup_56630b47540713091e2876fed87ce3b2)
+        ;
+
+        
+    
+    
+            marker_c965a2b02fff8270e3f55a4c42c19bb6.bindTooltip(
+                `<div>
+                     Musei Vaticani e Cappella Sistina (Día 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c110f915b19cf6be61f4254a8d21e002 = L.marker(
+                [41.9022, 12.4539],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_799bda357660d3e14b6ae9bd123031ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c110f915b19cf6be61f4254a8d21e002.setIcon(icon_799bda357660d3e14b6ae9bd123031ce);
+        
+    
+        var popup_5a992585e1aca95002aabb993843e4b1 = L.popup({"maxWidth": 350});
+
+        
+            var html_9094d067bb2af277f28b1902ea93325d = $(`<div id="html_9094d067bb2af277f28b1902ea93325d" style="width: 100.0%; height: 100.0%;"><b>Basilica San Pietro</b><br><br>Cúpula diseñada por Miguel Ángel.<br>Se alza sobre la tumba de San Pedro.<br>Tiene la estatua de bronce de San Pedro (besada).<br>Bernini diseñó la plaza elíptica.<br>El altar mayor está sobre la tumba papal.</div>`)[0];
+            popup_5a992585e1aca95002aabb993843e4b1.setContent(html_9094d067bb2af277f28b1902ea93325d);
+        
+
+        marker_c110f915b19cf6be61f4254a8d21e002.bindPopup(popup_5a992585e1aca95002aabb993843e4b1)
+        ;
+
+        
+    
+    
+            marker_c110f915b19cf6be61f4254a8d21e002.bindTooltip(
+                `<div>
+                     Basilica San Pietro (Día 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_316b46cb1b0dae1baa2bd064d980f711 = L.marker(
+                [41.9142, 12.4922],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_e8b4d4b96dd5d82b5e09ba2146d3cf11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_316b46cb1b0dae1baa2bd064d980f711.setIcon(icon_e8b4d4b96dd5d82b5e09ba2146d3cf11);
+        
+    
+        var popup_85392a59d987ea56e613ac4b2f4b8ba3 = L.popup({"maxWidth": 350});
+
+        
+            var html_311166a4ca5cac6fa90abf4540f8674a = $(`<div id="html_311166a4ca5cac6fa90abf4540f8674a" style="width: 100.0%; height: 100.0%;"><b>Galleria Borghese</b><br><br>Palacete del cardenal Scipione Borghese.<br>Obras de Bernini, Caravaggio, Canova y Rafael.<br>Reservación obligatoria con antelación.<br>Escultura de 'Apolo y Dafne' es un highlight.<br>Rodeada de jardines ingleses.</div>`)[0];
+            popup_85392a59d987ea56e613ac4b2f4b8ba3.setContent(html_311166a4ca5cac6fa90abf4540f8674a);
+        
+
+        marker_316b46cb1b0dae1baa2bd064d980f711.bindPopup(popup_85392a59d987ea56e613ac4b2f4b8ba3)
+        ;
+
+        
+    
+    
+            marker_316b46cb1b0dae1baa2bd064d980f711.bindTooltip(
+                `<div>
+                     Galleria Borghese (Día 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d9170ee8511a768206b8079c26b946b = L.marker(
+                [41.9148, 12.4889],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_a50e3fa7e5f5201a6acb7a23522bd89e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d9170ee8511a768206b8079c26b946b.setIcon(icon_a50e3fa7e5f5201a6acb7a23522bd89e);
+        
+    
+        var popup_e0afe8db6fba95db0cd2a2d989f21fb3 = L.popup({"maxWidth": 350});
+
+        
+            var html_fcc0b503242aeacae7c431d637c4e306 = $(`<div id="html_fcc0b503242aeacae7c431d637c4e306" style="width: 100.0%; height: 100.0%;"><b>Villa Borghese</b><br><br>Parque urbano más elegante de Roma.<br>Antiguo jardín privado de los Borghese.<br>Incluye teatros, lagos y templos clásicos.<br>Ideal para paseos románticos y picnic.<br>Tiene miradores hacia Piazza del Popolo.</div>`)[0];
+            popup_e0afe8db6fba95db0cd2a2d989f21fb3.setContent(html_fcc0b503242aeacae7c431d637c4e306);
+        
+
+        marker_9d9170ee8511a768206b8079c26b946b.bindPopup(popup_e0afe8db6fba95db0cd2a2d989f21fb3)
+        ;
+
+        
+    
+    
+            marker_9d9170ee8511a768206b8079c26b946b.bindTooltip(
+                `<div>
+                     Villa Borghese (Día 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d15f33538a126b5ed1300d0e853b801 = L.marker(
+                [41.9109, 12.4792],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_96b3dcf7bf9bc0e5f0bea162310b01ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8d15f33538a126b5ed1300d0e853b801.setIcon(icon_96b3dcf7bf9bc0e5f0bea162310b01ae);
+        
+    
+        var popup_bdd5d16b7b477d621378202d64d719ab = L.popup({"maxWidth": 350});
+
+        
+            var html_b2f0e834365074bfefd9d0603301b4a4 = $(`<div id="html_b2f0e834365074bfefd9d0603301b4a4" style="width: 100.0%; height: 100.0%;"><b>Terrazza del Pincio</b><br><br>Balcón panorámico sobre Piazza del Popolo.<br>Perfecto para sunsets inolvidables.<br>Decorado con bustos de italianos ilustres.<br>Frecuentado por artistas y enamorados.<br>Cerca de cafés históricos.</div>`)[0];
+            popup_bdd5d16b7b477d621378202d64d719ab.setContent(html_b2f0e834365074bfefd9d0603301b4a4);
+        
+
+        marker_8d15f33538a126b5ed1300d0e853b801.bindPopup(popup_bdd5d16b7b477d621378202d64d719ab)
+        ;
+
+        
+    
+    
+            marker_8d15f33538a126b5ed1300d0e853b801.bindTooltip(
+                `<div>
+                     Terrazza del Pincio (Día 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abb455fbaf3118b0a8c36f453b2efd28 = L.marker(
+                [41.9059, 12.4825],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_1749c05f5a6fbe54a60123cf3ac9bd3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_abb455fbaf3118b0a8c36f453b2efd28.setIcon(icon_1749c05f5a6fbe54a60123cf3ac9bd3c);
+        
+    
+        var popup_1849843a3a8182f2a73805e7b7cc793e = L.popup({"maxWidth": 350});
+
+        
+            var html_b5a27d3818e02aa94b0079f185b20bab = $(`<div id="html_b5a27d3818e02aa94b0079f185b20bab" style="width: 100.0%; height: 100.0%;"><b>Scalinata e Trinità dei Monti</b><br><br>Escalinata española con 135 peldaños.<br>Iglesia francesa en la cima.<br>Punto icónico para fotos y moda.<br>Fuente Barcaccia de Bernini en la base.<br>Tradición de sentarse y observar.</div>`)[0];
+            popup_1849843a3a8182f2a73805e7b7cc793e.setContent(html_b5a27d3818e02aa94b0079f185b20bab);
+        
+
+        marker_abb455fbaf3118b0a8c36f453b2efd28.bindPopup(popup_1849843a3a8182f2a73805e7b7cc793e)
+        ;
+
+        
+    
+    
+            marker_abb455fbaf3118b0a8c36f453b2efd28.bindTooltip(
+                `<div>
+                     Scalinata e Trinità dei Monti (Día 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1233ad1ddf85cd6048928406ffc143a = L.marker(
+                [41.9134, 12.4728],
+                {}
+            ).addTo(map_71621add249d46a9646e36bdd89a886f);
+        
+    
+            var icon_cafb9982c5c7e40db5052561e14f844d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1233ad1ddf85cd6048928406ffc143a.setIcon(icon_cafb9982c5c7e40db5052561e14f844d);
+        
+    
+        var popup_6793d76acdede3b2c93d2e6e58123ccd = L.popup({"maxWidth": 350});
+
+        
+            var html_8196cd67dabe046f1fba809ef95be414 = $(`<div id="html_8196cd67dabe046f1fba809ef95be414" style="width: 100.0%; height: 100.0%;"><b>Baja (Cena)</b><br><br>Restaurante flotante sobre el Tíber.<br>Ambiente chic y relajado.<br>Ideal para cena romántica.<br>Ofrece cocteles con vista a la ciudad.<br>Decoración náutica elegante.</div>`)[0];
+            popup_6793d76acdede3b2c93d2e6e58123ccd.setContent(html_8196cd67dabe046f1fba809ef95be414);
+        
+
+        marker_b1233ad1ddf85cd6048928406ffc143a.bindPopup(popup_6793d76acdede3b2c93d2e6e58123ccd)
+        ;
+
+        
+    
+    
+            marker_b1233ad1ddf85cd6048928406ffc143a.bindTooltip(
+                `<div>
+                     Baja (Cena) (Día 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
